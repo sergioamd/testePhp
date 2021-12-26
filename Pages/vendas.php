@@ -23,7 +23,7 @@ $sql = $conectar->query("SELECT * FROM tb_vendas");
 
 <!--Header-part-->
 <div id="header">
-  <h1><a href="">Admin - PDV</a></h1>
+  <h1><a href="">SuperPhp - PDV</a></h1>
 </div>
 <!--close-Header-part--> 
 
