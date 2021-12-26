@@ -2,7 +2,7 @@
 
 /* pdv */
 #link-left{font-size: 12pt;}
-.widget-title{background-color: #312eda;}
+#widget-title{background-color: #3633ff;}
 #infor-item{font-size: 11pt;}
 #total{text-align: right;font-size: 20pt; color: #312eda;}
 #user{font-size: 11pt;}
@@ -27,10 +27,3 @@
 #venda-det{font-size: 15pt;}
 #item-venda{font-size: 11pt;}
 #btn-posicao-modal{text-align: center;}
-/* nota */
-.nota{background-color: #F8EFCC; width: 23%; margin-left: 36%; text-align: center;}
-#razao-social{font-size: 11pt;}
-#inf-nome{font-size: 10pt;}
-.table-nota{text-align: left;}
-#total-nota{text-align: right;font-size: 13pt;}
-#btn-imprimir{text-align: center; background-color: #0E9217; color: #ffffff; border:0px; width: 100%;font-size: 12pt; cursor: pointer;}

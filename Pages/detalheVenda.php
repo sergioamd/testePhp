@@ -65,12 +65,7 @@ $venda = $sql->fetch(PDO::FETCH_OBJ);
               </tbody>
             </table>
              <table class="table table-bordered">
-              <tr id="venda-det">
-                <td>Item</td>
-                <td>Preço</td>
-                <td>Quantidade</td>
-              </tr>
-              <?php
+               <?php
               $sql = $conectar->query("SELECT * FROM tb_itens_venda ITV  JOIN tb_vendas VD ON ITV.vendaCodigo = VD.vendaId JOIN tb_itens I ON ITV.itemVenda = I.itemId WHERE vendaId = '$vendaId'");
                 while($itemVenda = $sql->fetch(PDO::FETCH_OBJ)){?>
                <tr  id="item-venda">
@@ -79,14 +74,7 @@ $venda = $sql->fetch(PDO::FETCH_OBJ);
                 <td><?= $itemVenda->itemQuant;?></td>
               </tr>
             <?php }?>
-            <tr>
-              <td colspan="3">
-                <div class="pull-right">
-                  <a href="#myAlert" data-toggle="modal">
-                <button class="btn btn-danger"><i class="fa fa-trash"></i> Excluir</button></a>
-              </div>
-              </td>
-            </tr>
+            
               </tbody>
             </table>
           </div>
@@ -98,20 +86,7 @@ $venda = $sql->fetch(PDO::FETCH_OBJ);
     </div>
   </div>
 </div>
-<!-- modal excluir -->
-<div id="myAlert" class="modal hide">
-  <div class="modal-header">
-    <button data-dismiss="modal" class="close" type="button">×</button>
-      <h3>Excluir venda</h3>
-    </div>
-      <div class="modal-body text-center">
-      <h4>Tem certeza que quer excluir este registro ?</h4>
-      </div>
-      <div class="modal-footer" id="btn-posicao-modal">
-      <a class="btn btn-primary" href="../Scripts/excluirVenda.php?vendaId=<?= $venda->vendaId;?>">
-    <i class="fa fa-thumbs-o-up"></i> Sim Excluir</a>
-   <a data-dismiss="modal" class="btn btn-danger" href="#"><i class="fa fa-thumbs-o-down"></i> Não Cancelar</a> </div>
-</div>
+
 <!--Footer-part-->
 <div class="row-fluid">
   <div id="footer" class="span12"> 2021 &copy; superPhp</div>
