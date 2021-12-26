@@ -1,0 +1,36 @@
+/* index */
+
+/* pdv */
+#link-left{font-size: 12pt;}
+.widget-title{background-color: #312eda;}
+#infor-item{font-size: 11pt;}
+#total{text-align: right;font-size: 20pt; color: #312eda;}
+#user{font-size: 11pt;}
+#nome-page{font-size: 20pt;}
+#alet-pdv{font-size: 18pt; margin-left: 2%;}
+#nome-form{color: #585858;}
+#link-item{color: #585858; font-size: 11pt;}
+#quant{width: 30%;}
+#quant-td{width: 20%;}
+#icon-pdv{font-size: 18pt; color: #312eda;}
+#item-pdv{font-size: 11pt;}
+#imagem-item{width: 50%;}
+/* itens */
+#edit-item{font-size: 15pt; color: #045FB4;}
+#excluir-item{font-size: 15pt; margin-left: 12%; color: #312eda;}
+/* vendas */
+#icon-venda-del{font-size: 18pt; color: #045FB4;}
+#icon-venda-imprimrir{font-size: 18pt; color: #0E9217;}
+#icon-venda-ex{font-size: 18pt; margin-left: 10%; color: #312eda;}
+#dados-venda{font-size: 11pt;}
+/* detalhe venda */
+#venda-det{font-size: 15pt;}
+#item-venda{font-size: 11pt;}
+#btn-posicao-modal{text-align: center;}
+/* nota */
+.nota{background-color: #F8EFCC; width: 23%; margin-left: 36%; text-align: center;}
+#razao-social{font-size: 11pt;}
+#inf-nome{font-size: 10pt;}
+.table-nota{text-align: left;}
+#total-nota{text-align: right;font-size: 13pt;}
+#btn-imprimir{text-align: center; background-color: #0E9217; color: #ffffff; border:0px; width: 100%;font-size: 12pt; cursor: pointer;}
