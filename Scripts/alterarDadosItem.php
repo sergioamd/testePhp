@@ -6,9 +6,9 @@ $itemNome = $_POST['itemNome'];
 $itemCodigo = $_POST['itemCodigo'];
 $itemPreco = $_POST['itemPreco'];
 $itemImposto = $_POST['itemImposto'];
-$descricao = $_POST['descricao'];
 
-$sql = "UPDATE tb_itens SET itemNome=:itemNome, itemCodigo=:itemCodigo, itemPreco=:itemPreco, itemImposto=:itemImposto, descricao=:descricao WHERE itemId = :itemId";
+
+$sql = "UPDATE tb_itens SET itemNome=:itemNome, itemCodigo=:itemCodigo, itemPreco=:itemPreco, itemImposto=:itemImposto WHERE itemId = :itemId";
 
 $atualizar = $conectar->prepare($sql);
 
@@ -16,7 +16,6 @@ $atualizar->bindParam(':itemNome', $itemNome);
 $atualizar->bindParam(':itemCodigo', $itemCodigo);
 $atualizar->bindParam(':itemPreco', $itemPreco);
 $atualizar->bindParam(':itemImposto', $itemImposto);
-$atualizar->bindParam(':descricao', $descricao);
 $atualizar->bindParam(':itemId', $itemId);
 $atualizar->execute();
 

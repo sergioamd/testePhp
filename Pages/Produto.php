@@ -88,10 +88,10 @@ $sql = $conectar->query("SELECT * FROM tb_itens");
             <table class="table table-bordered">
               <td>
              
-                <?='Produto: ', $listItem->itemNome;?> -
+                <?='Nome: ', $listItem->itemNome;?><br>
                 
-                R$ <?= number_format($listItem->itemPreco, 2, ',', '.');?><br>
-                <?= 'imposto: ', $listItem->itemImposto;?><br>
+                Valor R$ <?= number_format($listItem->itemPreco, 2, ',', '.');?><br>
+                <?= 'Imposto: ', $listItem->itemImposto;?><br>
                <hr>
                  
                 <a id="edit-item" href="cadastroItem.php?itemId=<?= $listItem->itemId;?>"> 

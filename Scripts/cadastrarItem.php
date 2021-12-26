@@ -6,10 +6,9 @@ $itemNome = $_POST['itemNome'];
 $itemCodigo = $_POST['itemCodigo'];
 $itemPreco = $_POST['itemPreco'];
 $itemImposto = $_POST['itemImposto'];
-$descricao = $_POST['descricao'];
 
 
-$sql = "INSERT INTO tb_itens (itemNome, itemCodigo, itemPreco, itemImposto, descricao)VALUES(:itemNome, :itemCodigo, :itemPreco, :itemImposto, :descricao)";
+$sql = "INSERT INTO tb_itens (itemNome, itemCodigo, itemPreco, itemImposto)VALUES(:itemNome, :itemCodigo, :itemPreco, :itemImposto)";
 
 $cadastrar = $conectar->prepare($sql);
 
@@ -17,8 +16,6 @@ $cadastrar->bindParam(':itemNome', $itemNome);
 $cadastrar->bindParam(':itemCodigo', $itemCodigo);
 $cadastrar->bindParam(':itemPreco', $itemPreco);
 $cadastrar->bindParam(':itemImposto', $itemImposto);
-$cadastrar->bindParam(':descricao', $descricao);
-
 
 
 $cadastrar->execute();

@@ -52,6 +52,7 @@ $item = $sql->fetch(PDO::FETCH_OBJ);
   <button class="close" data-dismiss="alert">×</button>
   <?= $_SESSION['produtoNaoCatrastrado'];?>
    </div>
+
    <?php unset($_SESSION['produtoNaoCatrastrado']);}?>
 
    <?php if(isset($_SESSION['produtoCatrastrado'])){?>
@@ -61,12 +62,14 @@ $item = $sql->fetch(PDO::FETCH_OBJ);
    </div>
    <?php unset($_SESSION['produtoCatrastrado']);}?>
   <div class="row-fluid">
+
     <?php if(!isset($_GET['itemId'])){?>
     <div class="span12">
       <div class="widget-box">
         <div class="widget-title">
           <h5  style="color: #ffffff;">Cadastrar Produtos</h5>
         </div>
+
         <div class="widget-content nopadding">
           <form action="../Scripts/cadastrarItem.php" method="post" class="form-horizontal" enctype="multipart/form-data">
             <div class="control-group">
@@ -93,17 +96,19 @@ $item = $sql->fetch(PDO::FETCH_OBJ);
                 <input type="text" class="span11" name="itemImposto"  required="" />
               </div>
             </div>
-               
+              
             <div class="form-actions">
               <button type="submit" class="btn btn-success"><i class="fa fa-save"></i> Cadastrar</button>
             </div>
-          </form>
+            </form>
+
         <?php }else{?>
         <div class="span7">
         <div class="widget-box">
           <div class="widget-title">
             <h5 style="color: #ffffff;">Alterar Produto</h5>
           </div>
+
           <div class="widget-content nopadding">
            <form action="../Scripts/alterarDadosItem.php?itemId=<?= $item->itemId;?>" method="post" class="form-horizontal">
             <div class="control-group">
@@ -139,6 +144,7 @@ $item = $sql->fetch(PDO::FETCH_OBJ);
             </div>
           </form>
           </div>
+
         </div>
       </div>
       
@@ -169,9 +175,6 @@ $item = $sql->fetch(PDO::FETCH_OBJ);
 <script src="../Componets/js/wysihtml5-0.3.0.js"></script> 
 <script src="../Componets/js/jquery.peity.min.js"></script> 
 <script src="../Componets/js/bootstrap-wysihtml5.js"></script> 
-<script>
-  $('.textarea_editor').wysihtml5();
-</script>
 </body>
 </html>
 
