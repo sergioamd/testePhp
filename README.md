@@ -12,6 +12,8 @@ um que ja tinha e adaptei para o que vocês pediram
 
 o sistema pega o valor sub total da venda do produto e multiplica pelo imposto
 
+devera criar o banco no phpmyadmin do xampp noome do banco " bancotop " depois importar o arquivo bancotop.sql
+
 
 
 
